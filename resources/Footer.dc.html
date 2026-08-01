@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<footer style="background:#fff;border-top:1px solid #E6EAF2;font-family:'Space Grotesk',system-ui,sans-serif;padding:0 clamp(20px,4vw,40px)">
+  <div style="max-width:1180px;margin:0 auto;padding:clamp(48px,6vw,72px) 0 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:clamp(28px,4vw,56px)">
+    <div style="max-width:320px">
+      <a href="{{ homeHref }}" style="display:flex;align-items:center;gap:11px;text-decoration:none" aria-label="DocHive home">
+        <svg viewBox="0 0 64 64" width="58" height="58" fill="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="dhf" x1="7" y1="10" x2="57" y2="54" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#5F5CEC"></stop><stop offset="1" stop-color="#06B6D4"></stop>
+            </linearGradient>
+          </defs>
+          <path d="M7 32 L19.5 10.4 L44.5 10.4 L57 32 L44.5 53.6 L19.5 53.6 Z" fill="url(#dhf)"></path>
+          <rect x="21" y="21" width="5" height="22" rx="2.2" fill="#fff"></rect>
+          <rect x="38" y="21" width="5" height="22" rx="2.2" fill="#fff"></rect>
+          <rect x="21" y="29.5" width="22" height="5" rx="2.2" fill="#A5F3FC"></rect>
+        </svg>
+        <span style="font-size:33px;font-weight:700;letter-spacing:-0.035em;color:#0D0B22">Doc<span style="background-image:linear-gradient(135deg,#7C7AF2,#2ED3EF);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent">Hive</span></span>
+      </a>
+      <p style="margin:18px 0 0;font-size:15px;line-height:1.65;color:#5B6B80">Files, renames and finds your contracts, policies, HR files and invoices. Read. File. Done.</p>
+    </div>
+
+    <div>
+      <h2 style="margin:0 0 16px;font-size:12px;letter-spacing:0.2em;font-weight:600;color:#94A3B8;text-transform:uppercase">Product</h2>
+      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px">
+        <li><a href="{{ howHref }}" style="font-size:15px;color:#0D0B22;text-decoration:none" style-hover="color:#5F5CEC">How it works</a></li>
+        <li><a href="{{ useHref }}" style="font-size:15px;color:#0D0B22;text-decoration:none" style-hover="color:#5F5CEC">What it handles</a></li>
+        <li><a href="{{ pricingHref }}" style="font-size:15px;color:#0D0B22;text-decoration:none" style-hover="color:#5F5CEC">Pricing</a></li>
+        <li><a href="{{ faqHref }}" style="font-size:15px;color:#0D0B22;text-decoration:none" style-hover="color:#5F5CEC">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 style="margin:0 0 16px;font-size:12px;letter-spacing:0.2em;font-weight:600;color:#94A3B8;text-transform:uppercase">Company</h2>
+      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px">
+        <li><a href="{{ aboutHref }}" style="font-size:15px;color:#0D0B22;text-decoration:none" style-hover="color:#5F5CEC">About DocHive</a></li>
+        <li><a href="{{ resourcesHref }}" style="font-size:15px;color:#0D0B22;text-decoration:none" style-hover="color:#5F5CEC">Resources</a></li>
+        <li><a href="{{ contactHref }}" style="font-size:15px;color:#0D0B22;text-decoration:none" style-hover="color:#5F5CEC">Book a 20 minute call</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 style="margin:0 0 16px;font-size:12px;letter-spacing:0.2em;font-weight:600;color:#94A3B8;text-transform:uppercase">Legal</h2>
+      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px">
+        <li><a href="{{ legalHref }}" style="font-size:15px;color:#0D0B22;text-decoration:none" style-hover="color:#5F5CEC">Privacy &amp; imprint</a></li>
+      </ul>
+      <address style="margin:22px 0 0;font-style:normal;font-size:14px;line-height:1.7;color:#5B6B80">
+        DocHive AG<br />
+        Musterstrasse 00<br />
+        8000 Zürich, Switzerland
+      </address>
+      <p style="margin:14px 0 0;font-size:14px;line-height:1.7;color:#5B6B80"><a href="mailto:hello@dochive.ch" style="color:#5F5CEC;text-decoration:none" style-hover="color:#06B6D4">hello@dochive.ch</a><br />+41 00 000 00 00</p>
+    </div>
+  </div>
+
+  <div style="max-width:1180px;margin:0 auto;padding:20px 0 40px;border-top:1px solid #E6EAF2;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+    <p style="margin:0;font-size:13px;color:#94A3B8">© 2026 DocHive AG. Built and supported in Switzerland.</p>
+    <p style="margin:0;font-size:13px;color:#94A3B8">Deutsche Fassung in Vorbereitung.</p>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1180,&quot;height&quot;:420},&quot;base&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const b = this.props.base ?? '';
+    return {
+      homeHref: b + 'index.dc.html',
+      howHref: b + 'how-it-works.dc.html',
+      useHref: b + 'use-cases.dc.html',
+      pricingHref: b + 'pricing.dc.html',
+      faqHref: b + 'faq.dc.html',
+      aboutHref: b + 'about.dc.html',
+      contactHref: b + 'contact.dc.html',
+      legalHref: b + 'legal.dc.html',
+      resourcesHref: b + 'resources/index.dc.html'
+    };
+  }
+}
+</script>
+</body>
+</html>

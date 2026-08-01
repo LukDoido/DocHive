@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>FAQ: where your documents go, and what it costs | DocHive</title>
+  <meta name="description" content="Straight answers on scans and handwriting, wrong filings, folder structures, what leaves your network, audit logs, access rights, setup and cancellation." />
+  <link rel="canonical" href="https://dochive.ch/faq.html" />
+  <link rel="alternate" hreflang="en-CH" href="https://dochive.ch/faq.html" />
+  <!-- <link rel="alternate" hreflang="de-CH" href="https://dochive.ch/de/faq.html" /> -->
+  <link rel="alternate" hreflang="x-default" href="https://dochive.ch/faq.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="DocHive" />
+  <meta property="og:url" content="https://dochive.ch/faq.html" />
+  <meta property="og:title" content="DocHive FAQ: product, data, buying" />
+  <meta property="og:description" content="Eighteen questions answered plainly, including the ones where the answer is a limitation. The data section is the longest for a reason." />
+  <meta property="og:image" content="/og-default.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DocHive FAQ: product, data, buying" />
+  <meta name="twitter:description" content="Eighteen questions answered plainly, including the ones where the answer is a limitation." />
+  <meta name="twitter:image" content="/og-default.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"DocHive","url":"https://dochive.ch/","logo":"https://dochive.ch/og-default.png","address":{"@type":"PostalAddress","streetAddress":"Musterstrasse 00","postalCode":"8000","addressLocality":"Zürich","addressCountry":"CH"},"contactPoint":{"@type":"ContactPoint","contactType":"sales","email":"hello@dochive.ch","telephone":"+41000000000","availableLanguage":["en","de"]},"sameAs":["https://www.linkedin.com/company/dochive","https://github.com/dochive"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dochive.ch/"},{"@type":"ListItem","position":2,"name":"FAQ","item":"https://dochive.ch/faq.html"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can it read scans and handwriting?","acceptedAnswer":{"@type":"Answer","text":"Printed text, including scans, is reliable. Handwriting is not: signatures and short handwritten notes are usually read, filled in handwritten forms often are not. Those documents are flagged for a person rather than guessed at."}},{"@type":"Question","name":"What if it files something wrong?","acceptedAnswer":{"@type":"Answer","text":"A wrong proposal is corrected in the review queue before anything moves. If something was approved in error, one click puts the file back under its original name in its original folder, and the audit log shows what happened."}},{"@type":"Question","name":"Can it work with our existing folder structure?","acceptedAnswer":{"@type":"Answer","text":"That is the only way it works. DocHive files into folders that already exist and follows the naming pattern you already use. It does not create a new structure or a parallel archive."}},{"@type":"Question","name":"Which languages does it handle?","acceptedAnswer":{"@type":"Answer","text":"German, French, Italian and English, including Swiss German spelling and mixed language documents. A contract in German with English annexes is read as one document."}},{"@type":"Question","name":"What happens if the internet drops?","acceptedAnswer":{"@type":"Answer","text":"On premise installations keep working: reading, filing, searching and reminders all run locally. Only email reminders wait for the connection to come back."}},{"@type":"Question","name":"Do we need IT staff?","acceptedAnswer":{"@type":"Answer","text":"No. We install the machine and configure it. Day to day, someone approves proposals in a browser. If you have an IT partner we work with them on network questions."}},{"@type":"Question","name":"Where do our documents actually go?","acceptedAnswer":{"@type":"Answer","text":"Nowhere. They stay in the folder or drive they are in now. On premise, they are read on the machine in your office. On SharePoint or Google Drive, they are read through the official API and stay in your tenant."}},{"@type":"Question","name":"Who else can see our documents?","acceptedAnswer":{"@type":"Answer","text":"Nobody outside your company. We have no copy and no standing access. If you ask us to look at a problem, someone gives us access for that session and it ends with the session."}},{"@type":"Question","name":"Is our data used to train anything?","acceptedAnswer":{"@type":"Answer","text":"No. Your documents are never used to train any model, ours or anyone else's. Your corrections stay on your machine and improve proposals only for you."}},{"@type":"Question","name":"What exactly leaves our network?","acceptedAnswer":{"@type":"Answer","text":"A daily licence check carrying a licence key and the software version. Nothing else, unless you switch on optional cloud processing for difficult documents, in which case only those documents are sent."}},{"@type":"Question","name":"Is there an audit log, and who can read it?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every proposal, edit, approval, rejection and undo is recorded with user and timestamp, including the old and new filename. You decide who can read it, and it can be exported."}},{"@type":"Question","name":"What happens to our documents if we stop paying?","acceptedAnswer":{"@type":"Answer","text":"Nothing. They are your files, in your folders, under the names they were filed with. You lose search, reminders and new proposals. There is no export to run and nothing to release."}},{"@type":"Question","name":"How does it handle access rights and confidential HR files?","acceptedAnswer":{"@type":"Answer","text":"It inherits the permissions already on your folders. If only HR can open a folder, only HR sees those documents in search, and only nominated people review HR proposals."}},{"@type":"Question","name":"What about backups?","acceptedAnswer":{"@type":"Answer","text":"DocHive is not a backup and does not replace one. Your documents stay in the system you already back up. The machine holds the search index and the log, which we can rebuild."}},{"@type":"Question","name":"What does setup involve and how long does it take?","acceptedAnswer":{"@type":"Answer","text":"One on site day for most companies: install the machine, connect folders and mailboxes, write down your naming rules, show the reviewers. Rules are then tuned over the first weeks."}},{"@type":"Question","name":"Do you come to us?","acceptedAnswer":{"@type":"Answer","text":"Yes. Setup is always done on site, on every plan. We would rather see how you file than be told about it."}},{"@type":"Question","name":"What if we have several legal entities?","acceptedAnswer":{"@type":"Answer","text":"One installation can serve several entities with separate folders, rules and rights. Each additional entity costs CHF 1,200 a year."}},{"@type":"Question","name":"What happens if we cancel?","acceptedAnswer":{"@type":"Answer","text":"The first term is 12 months, then year to year with three months' notice to the end of the term. The machine is yours. Filed documents stay filed."}},{"@type":"Question","name":"Can we buy it outright instead of subscribing?","acceptedAnswer":{"@type":"Answer","text":"Yes. A perpetual licence with annual maintenance is available. Ask on the call and we will price both."}}]}</script>
+  <style>
+    *{box-sizing:border-box}
+    html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+    body{margin:0;background:#F4F6FB;color:#0D0B22;font-family:'Space Grotesk',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:#5F5CEC;text-decoration:none}
+    a:hover{color:#06B6D4}
+    :focus-visible{outline:2px solid #5F5CEC;outline-offset:3px;border-radius:6px}
+    summary{cursor:pointer;list-style:none}
+    summary::-webkit-details-marker{display:none}
+    @media (prefers-reduced-motion: reduce){*{animation-duration:.001ms!important;transition:none!important}}
+  </style>
+</helmet>
+
+<dc-import name="Header" active="faq" hint-size="100%,74px"></dc-import>
+
+<main id="main" style="display:block">
+
+  <section style="background:#F4F6FB;padding:clamp(40px,5vw,72px) clamp(20px,4vw,40px) clamp(40px,5vw,64px)">
+    <div style="max-width:1180px;margin:0 auto">
+      <nav aria-label="Breadcrumb" style="margin-bottom:24px;font-size:13px;color:#94A3B8"><a href="index.dc.html" style="color:#5B6B80;text-decoration:none" style-hover="color:#5F5CEC">Home</a> <span aria-hidden="true" style="padding:0 6px">/</span> <span style="color:#0D0B22">FAQ</span></nav>
+      <p style="margin:0 0 18px;font-size:12px;letter-spacing:0.2em;font-weight:600;color:#5B6B80;text-transform:uppercase">FAQ</p>
+      <h1 style="margin:0;max-width:24ch;font-size:clamp(34px,4.6vw,54px);line-height:1.05;letter-spacing:-0.03em;font-weight:700;color:#0D0B22;text-wrap:pretty">Questions, including the ones with awkward answers</h1>
+      <p style="margin:24px 0 0;max-width:58ch;font-size:clamp(17px,1.3vw,19px);line-height:1.7;color:rgba(13,11,34,0.72)">Where a limitation is the honest answer, it is written as one. The data section is the longest, because that is the section people forward to someone else.</p>
+      <nav aria-label="Sections" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:32px">
+        <a href="#product" style="padding:10px 16px;border:1px solid #E6EAF2;border-radius:99px;background:#fff;font-size:14px;font-weight:600;color:#0D0B22;text-decoration:none" style-hover="border-color:#5F5CEC;color:#5F5CEC">About the product</a>
+        <a href="#data" style="padding:10px 16px;border:1px solid #E6EAF2;border-radius:99px;background:#fff;font-size:14px;font-weight:600;color:#0D0B22;text-decoration:none" style-hover="border-color:#5F5CEC;color:#5F5CEC">About your data</a>
+        <a href="#buying" style="padding:10px 16px;border:1px solid #E6EAF2;border-radius:99px;background:#fff;font-size:14px;font-weight:600;color:#0D0B22;text-decoration:none" style-hover="border-color:#5F5CEC;color:#5F5CEC">About buying</a>
+      </nav>
+    </div>
+  </section>
+
+  <section id="product" style="background:#fff;border-top:1px solid #E6EAF2;padding:clamp(48px,6vw,80px) clamp(20px,4vw,40px)">
+    <div style="max-width:820px;margin:0 auto" data-reveal="">
+      <h2 style="margin:0 0 28px;font-size:clamp(24px,3vw,34px);line-height:1.1;letter-spacing:-0.03em;font-weight:600;color:#0D0B22">About the product</h2>
+      <div style="border-top:1px solid #E6EAF2">
+        <details style="border-bottom:1px solid #E6EAF2">
+          <summary style="display:flex;justify-content:space-between;gap:16px;padding:20px 0;font-size:17px;font-weight:600;color:#0D0B22">Can it read scans and handwriting?<span aria-hidden="true" style="color:#5F5CEC">+</span></summary>
+          <p style="margin:0 0 22px;max-width:64ch;font-size:16px;line-height:1.75;color:rgba(13,11,34,0.72)">Printed text is reliable, scans included. Handwriting is not. Signatures and short notes are usually read. A form filled in by hand often is not. Those documents are flagged for a person instead of guessed at.</p>
+        </details>
+        <details style="border-bottom:1px solid #E6EAF2">
+          <summary style="display:flex;justify-content:space-between;gap:16px;padding:20px 0;font-size:17px;font-weight:600;color:#0D0B22">What if it files something wrong?<span aria-hidden="true" style="color:#5F5CEC">+</span></summary>
+          <p style="margin:0 0 22px;max-width:64ch;font-size:16px;line-height:1.75;color:rgba(13,11,34,0.72)">You correct it in the queue before anything moves. If a wrong proposal was approved, one click puts the file back under its original name in its original folder, and the log shows who did what. See <a href="how-it-works.dc.html" style="font-weight:600;color:#5F5CEC;text-decoration:none">how the review queue works</a>.</p>
+        </details>
+        <details style="border-bottom:1px solid #E6EAF2">
+          <summary style="display:flex;justify-content:space-between;gap:16px;padding:20px 0;font-size:17px;font-weight:600;color:#0D0B22">Can it work with our existing folder structure?<span aria-hidden="true" style="color:#5F5CEC">+</span></summary>
+          <p style="margin:0 0 22px;max-width:64ch;font-size:16px;line-height:1.75;color:rgba(13,11,34,0.72)">It is the only way it works. DocHive files into folders that exist and follows the pattern you already use. No new structure, no parallel archive.</p>
+        </details>
+        <details style="border-bottom:1px solid #E6EAF2">
+          <summary style="display:flex;justify-content:space-between;gap:16px;padding:20px 0;font-size:17px;font-weight:600;color:#0D0B22">Which languages does it handle?<span aria-hidden="true" style="color:#5F5CEC">+</span></summary>
+          <p style="margin:0 0 22px;max-width:64ch;font-size:16px;line-height:1.75;color:rgba(13,11,34,0.72)">German, French, Italian and English, Swiss spelling included. A German contract with English annexes is read as one document.</p>
+        </details>
+        <details style="border-bottom:1px solid #E6EAF2">
+          <summary style="display:flex;justify-content:space-between;gap:16px;padding:20px 0;font-size:17px;font-weight:600;color:#0D0B22">What happens if the internet drops?<span aria-hidden="true" style="color:#5F5CEC">+</span></summary>
+          <p style="margin:0 0 22px;max-width:64ch;font-size:16px;line-height:1.75;color:rgba(13,11,34,0.72)">On premise, everything keeps running: reading, filing, search, deadlines. Only email reminders wait for the line to come back. On SharePoint or Google Drive, DocHive waits for your cloud like everything else does.</p>
+        </details>
+        <details style="border-bottom:1px solid #E6EAF2">
+          <summary style="display:flex;justify-content:space-between;gap:16px;padding:20px 0;font-size:17px;font-weight:600;color:#0D0B22">Do we need IT staff?<span aria-hidden="true" style="color:#5F5CEC">+</span></summary>
+          <p style="margin:0 0 22px;max-width:64ch;font-size:16px;line-height:1.75;color:rgba(13,11,34,0.72)">No. We install and configure the machine. Day to day, someone approves proposals in a browser. If you have an IT partner, we speak to them about the network and leave you out of it.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="data" style="background:#F4F6FB;padding:clamp(48px,6vw,80px) clamp(20px,4vw,40px)">
+    <div style="max-width:820px;margin:0 auto" data-reveal="">
+      <h2 style="margin:0 0 12px;font-size:clamp(24px,3vw,34px);line-height:1.1;letter-spacing:-0.03em;font-weight:600;color:#0D0B22">About your data</h2>
+      <p style="margin:0 0 28px;max-width:60ch;font-size:16px;line-height:1.7;color:#5B6B80">The section to forward. Also covered on <a href="how-it-works.dc.html" style="font-weight:600;color:#5F5CEC;text-decoration:none">what leaves the building</a>.</p>
+      <div style="border-top:1px solid #E6EAF2">
+        <details style="border-bottom:1px solid #E6EAF2">
+          <summary style="display:flex;justify-content:space-between;gap:16px;padding:20px 0;font-size:17px;font-weight:600;color:#0D0B22">Where do our documents actually go?<span aria-hidden="true" style="color:#5F5CEC">+</span></summary>
+          <p style="margin:0 0 22px;max-width:64ch;font-size:16px;line-height:1.75;color:rgba(13,11,34,0.72)">Nowhere. They stay in the folder or drive they are in now. On premise they are read on the machine in your office. On SharePoint or Google Drive they are read through the official API and stay in your tenant.</p>
+        </details>
+        <details style="border-bottom:1px solid #E6EAF2">
+          <summary style="display:flex;justify-content:space-between;gap:16px;padding:20px 0;font-size:17px;font-weight:600;color:#0D0B22">Who else can see our documents?<span aria-hidden="true" style="color:#5F5CEC">+</span></summary>
+          <p style="margin:0 0 22px;max-width:64ch;font-size:16px;line-height:1.75;color:rgba(13,11,34,0.72)">Nobody outside your company. We hold no copy and have no standing access. If you ask us to look at a problem, someone grants access for that session and it ends with the session.</p>
+        </details>
+        <details style="border-bottom:1px solid #E6EAF2">
+          <summary style="display:flex;justify-content:space-between;gap:16px;padding:20px 0;font-size:17px;font-weight:600;color:#0D0B22">Is our data used to train anything?<span aria-hidden="true" style="color:#5F5CEC">+</span></summary>
+          <p style="margin:0 0 22px;max-width:64ch;font-size:16px;line-height:1.75;color:rgba(13,11,34,0.72)">No. Not ours, not anyone else's. Your corrections stay on your machine and improve proposals for you only.</p>
+        </details>
+        <details style="border-bottom:1px solid #E6EAF2">
+          <summary style="display:flex;justify-content:space-between;gap:16px;padding:20px 0;font-size:17px;font-weight:600;color:#0D0B22">What exactly leaves our network?<span aria-hidden="true" style="color:#5F5CEC">+</span></summary>
+          <p style="margin:0 0 22px;max-width:64ch;font-size:16px;line-height:1.75;color:rgba(13,11,34,0.72)">One licence check a day, carrying a key and the software version. No filenames, no content. The exception is optional cloud processing for difficult documents: off by default, and when on, only the documents you send to it leave.</p>
+        </details>
+        <details style="border-bottom:1px solid #E6EAF2">
+          <summary style="display:flex;justify-content:space-between;gap:16px;padding:20px 0;font-size:17px;font-weight:600;color:#0D0B22">Is there an audit log, and who can read it?<span aria-hidden="true" style="color:#5F5CEC">+</span></summary>
+          <p style="margin:0 0 22px;max-width:64ch;font-size:16px;line-height:1.75;color:rgba(13,11,34,0.72)">Yes. Every proposal, edit, approval, rejection and undo, with user, timestamp, old name and new name. You decide who can read it. It exports to CSV, which is usually what an auditor wants.</p>
+        </details>
+        <details style="border-bottom:1px solid #E6EAF2">
+          <summary style="display:flex;justify-content:space-between;gap:16px;padding:20px 0;font-size:17px;font-weight:600;color:#0D0B22">What happens to our documents if we stop paying?<span aria-hidden="true" style="color:#5F5CEC">+</span></summary>
+          <p style="margin:0 0 22px;max-width:64ch;font-size:16px;line-height:1.75;color:rgba(13,11,34,0.72)">Nothing happens to them. They are your files, in your folders, under the names they were filed with. You lose search, reminders and new proposals. There is no export to run, because there is nothing of yours in here to release.</p>
+        </details>
+        <details style="border-bottom:1px solid #E6EAF2">
+          <summary style="display:flex;justify-content:space-between;gap:16px;padding:20px 0;font-size:17px;font-weight:600;color:#0D0B22">How does it handle access rights and confidential HR files?<span aria-hidden="true" style="color:#5F5CEC">+</span></summary>
+          <p style="margin:0 0 22px;max-width:64ch;font-size:16px;line-height:1.75;color:rgba(13,11,34,0.72)">It inherits the rights already on your folders. If only HR can open a folder, only HR sees those documents in search, and only the people you nominate review HR proposals. DocHive does not widen access to anything.</p>
+        </details>
+        <details style="border-bottom:1px solid #E6EAF2">
+          <summary style="display:flex;justify-content:space-between;gap:16px;padding:20px 0;font-size:17px;font-weight:600;color:#0D0B22">What about backups?<span aria-hidden="true" style="color:#5F5CEC">+</span></summary>
+          <p style="margin:0 0 22px;max-width:64ch;font-size:16px;line-height:1.75;color:rgba(13,11,34,0.72)">DocHive is not a backup and does not replace one. Your documents stay in the system you already back up. The machine holds the search index and the log. Both can be rebuilt.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="buying" style="background:#fff;border-top:1px solid #E6EAF2;padding:clamp(48px,6vw,80px) clamp(20px,4vw,40px)">
+    <div style="max-width:820px;margin:0 auto" data-reveal="">
+      <h2 style="margin:0 0 12px;font-size:clamp(24px,3vw,34px);line-height:1.1;letter-spacing:-0.03em;font-weight:600;color:#0D0B22">About buying</h2>
+      <p style="margin:0 0 28px;max-width:60ch;font-size:16px;line-height:1.7;color:#5B6B80">Prices and day rates are on the <a href="pricing.dc.html" style="font-weight:600;color:#5F5CEC;text-decoration:none">pricing page</a>.</p>
+      <div style="border-top:1px solid #E6EAF2">
+        <details style="border-bottom:1px solid #E6EAF2">
+          <summary style="display:flex;justify-content:space-between;gap:16px;padding:20px 0;font-size:17px;font-weight:600;color:#0D0B22">What does setup involve and how long does it take?<span aria-hidden="true" style="color:#5F5CEC">+</span></summary>
+          <p style="margin:0 0 22px;max-width:64ch;font-size:16px;line-height:1.75;color:rgba(13,11,34,0.72)">One day on site for most companies: install the machine, connect the folders and mailboxes, write down your naming rules, show the reviewers. Rules are then tuned over the first few weeks, when the first awkward documents turn up.</p>
+        </details>
+        <details style="border-bottom:1px solid #E6EAF2">
+          <summary style="display:flex;justify-content:space-between;gap:16px;padding:20px 0;font-size:17px;font-weight:600;color:#0D0B22">Do you come to us?<span aria-hidden="true" style="color:#5F5CEC">+</span></summary>
+          <p style="margin:0 0 22px;max-width:64ch;font-size:16px;line-height:1.75;color:rgba(13,11,34,0.72)">Yes, on every plan. We would rather see how you file than be told about it.</p>
+        </details>
+        <details style="border-bottom:1px solid #E6EAF2">
+          <summary style="display:flex;justify-content:space-between;gap:16px;padding:20px 0;font-size:17px;font-weight:600;color:#0D0B22">What if we have several legal entities?<span aria-hidden="true" style="color:#5F5CEC">+</span></summary>
+          <p style="margin:0 0 22px;max-width:64ch;font-size:16px;line-height:1.75;color:rgba(13,11,34,0.72)">One installation can serve several, with separate folders, rules and rights. Each additional entity is CHF 1,200 a year.</p>
+        </details>
+        <details style="border-bottom:1px solid #E6EAF2">
+          <summary style="display:flex;justify-content:space-between;gap:16px;padding:20px 0;font-size:17px;font-weight:600;color:#0D0B22">What happens if we cancel?<span aria-hidden="true" style="color:#5F5CEC">+</span></summary>
+          <p style="margin:0 0 22px;max-width:64ch;font-size:16px;line-height:1.75;color:rgba(13,11,34,0.72)">First term is 12 months, then year to year with three months' notice to the end of the term. The machine is yours. Filed documents stay filed.</p>
+        </details>
+        <details style="border-bottom:1px solid #E6EAF2">
+          <summary style="display:flex;justify-content:space-between;gap:16px;padding:20px 0;font-size:17px;font-weight:600;color:#0D0B22">Can we buy it outright instead of subscribing?<span aria-hidden="true" style="color:#5F5CEC">+</span></summary>
+          <p style="margin:0 0 22px;max-width:64ch;font-size:16px;line-height:1.75;color:rgba(13,11,34,0.72)">Yes. A perpetual licence with annual maintenance. Ask on the call and we will price both, so you can compare.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <dc-import name="CTABand" line="If your question is not here, it is probably the one worth asking on the call." hint-size="100%,260px"></dc-import>
+</main>
+
+<dc-import name="Footer" hint-size="100%,420px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const els = Array.prototype.slice.call(document.querySelectorAll('[data-reveal]'));
+    els.forEach((el) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(16px)';
+      el.style.transition = 'opacity .65s ease, transform .65s ease';
+    });
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'none';
+        io.unobserve(e.target);
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -4% 0px' });
+    els.forEach((el) => io.observe(el));
+  }
+}
+</script>
+</body>
+</html>

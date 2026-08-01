@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Organise contracts in SharePoint without a project | DocHive</title>
+  <meta name="description" content="One library, four columns and a naming rule people can follow, a contract structure for SharePoint that still works in year three, and the mistakes that kill it." />
+  <link rel="canonical" href="https://dochive.ch/resources/organise-contracts-sharepoint.html" />
+  <link rel="alternate" hreflang="en-CH" href="https://dochive.ch/resources/organise-contracts-sharepoint.html" />
+  <!-- <link rel="alternate" hreflang="de-CH" href="https://dochive.ch/de/resources/organise-contracts-sharepoint.html" /> -->
+  <link rel="alternate" hreflang="x-default" href="https://dochive.ch/resources/organise-contracts-sharepoint.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="DocHive" />
+  <meta property="og:url" content="https://dochive.ch/resources/organise-contracts-sharepoint.html" />
+  <meta property="og:title" content="Organising contracts in SharePoint without a project" />
+  <meta property="og:description" content="A structure a 30-person company can set up in an afternoon: one library, four columns, one naming rule, and a view that shows what expires next." />
+  <meta property="og:image" content="/og-default.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Organising contracts in SharePoint without a project" />
+  <meta name="twitter:description" content="One library, four columns, one naming rule, and a view that shows what expires next." />
+  <meta name="twitter:image" content="/og-default.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Organising contracts in SharePoint without a project","description":"A practical contract structure for SharePoint: one library, four metadata columns, a naming convention, and views that surface expiring agreements.","datePublished":"2026-07-08","dateModified":"2026-07-08","author":{"@type":"Organization","name":"DocHive"},"publisher":{"@type":"Organization","name":"DocHive","logo":{"@type":"ImageObject","url":"https://dochive.ch/og-default.png"}},"mainEntityOfPage":"https://dochive.ch/resources/organise-contracts-sharepoint.html"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dochive.ch/"},{"@type":"ListItem","position":2,"name":"Resources","item":"https://dochive.ch/resources/"},{"@type":"ListItem","position":3,"name":"Organising contracts in SharePoint","item":"https://dochive.ch/resources/organise-contracts-sharepoint.html"}]}</script>
+  <style>
+    *{box-sizing:border-box}
+    html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+    body{margin:0;background:#F4F6FB;color:#0D0B22;font-family:'Space Grotesk',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:#5F5CEC;text-decoration:none}
+    a:hover{color:#06B6D4}
+    :focus-visible{outline:2px solid #5F5CEC;outline-offset:3px;border-radius:6px}
+  </style>
+</helmet>
+
+<dc-import name="Header" active="resources" base="../" hint-size="100%,74px"></dc-import>
+
+<main id="main" style="display:block">
+  <article>
+    <header style="background:#F4F6FB;padding:clamp(36px,4.5vw,64px) clamp(20px,4vw,40px) clamp(32px,4vw,48px)">
+      <div style="max-width:720px;margin:0 auto">
+        <nav aria-label="Breadcrumb" style="margin-bottom:22px;font-size:13px;color:#94A3B8"><a href="../index.dc.html" style="color:#5B6B80;text-decoration:none" style-hover="color:#5F5CEC">Home</a> <span aria-hidden="true" style="padding:0 6px">/</span> <a href="index.dc.html" style="color:#5B6B80;text-decoration:none" style-hover="color:#5F5CEC">Resources</a> <span aria-hidden="true" style="padding:0 6px">/</span> <span style="color:#0D0B22">Contracts in SharePoint</span></nav>
+        <p style="margin:0 0 18px;font-size:12px;letter-spacing:0.2em;font-weight:600;color:#5B6B80;text-transform:uppercase">Practice</p>
+        <h1 style="margin:0;font-size:clamp(30px,3.8vw,44px);line-height:1.08;letter-spacing:-0.03em;font-weight:700;color:#0D0B22;text-wrap:pretty">Organising contracts in SharePoint without a project</h1>
+        <p style="margin:22px 0 0;font-size:18px;line-height:1.7;color:rgba(13,11,34,0.72)">A structure a 30-person company can build in an afternoon, and that still works in year three. The difficult part is not SharePoint. It is designing something people will keep doing.</p>
+        <p style="margin:26px 0 0;font-size:14px;color:#94A3B8">DocHive · published 8 July 2026 · 9 min read</p>
+      </div>
+    </header>
+
+    <div style="background:#fff;border-top:1px solid #E6EAF2;padding:clamp(40px,5vw,72px) clamp(20px,4vw,40px)">
+      <div style="max-width:720px;margin:0 auto">
+
+        <nav aria-label="Contents" style="margin:0 0 clamp(36px,4vw,48px);padding:22px 24px;border:1px solid #E6EAF2;border-radius:16px;background:#F4F6FB">
+          <p style="margin:0 0 14px;font-size:12px;letter-spacing:0.2em;font-weight:600;color:#94A3B8;text-transform:uppercase">Contents</p>
+          <ol style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:16px;color:#0D0B22">
+            <li><a href="#one-library" style="color:#5F5CEC;text-decoration:none">One library, not one per department</a></li>
+            <li><a href="#folders" style="color:#5F5CEC;text-decoration:none">Shallow folders, and what they are for</a></li>
+            <li><a href="#columns" style="color:#5F5CEC;text-decoration:none">Four columns, and no more</a></li>
+            <li><a href="#naming" style="color:#5F5CEC;text-decoration:none">A naming rule people can follow</a></li>
+            <li><a href="#views" style="color:#5F5CEC;text-decoration:none">The two views that earn their keep</a></li>
+            <li><a href="#permissions" style="color:#5F5CEC;text-decoration:none">Permissions before content</a></li>
+            <li><a href="#collapse" style="color:#5F5CEC;text-decoration:none">Why structures collapse by month four</a></li>
+            <li><a href="#afternoon" style="color:#5F5CEC;text-decoration:none">The afternoon, in order</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="one-library" style="margin:0 0 16px;font-size:clamp(24px,2.8vw,30px);line-height:1.2;letter-spacing:-0.02em;font-weight:600;color:#0D0B22">One library, not one per department</h2>
+        <p style="margin:0 0 18px;font-size:17px;line-height:1.8;color:rgba(13,11,34,0.82)">Put every contract in the company into one document library. Not one per department, not one per site. The reason is search: a single library can be filtered, sorted and reported on in one place, and a person looking for the Bühler agreement does not have to guess whether facilities or finance owns it.</p>
+        <p style="margin:0 0 32px;font-size:17px;line-height:1.8;color:rgba(13,11,34,0.82)">The instinct to split usually comes from permissions. Handle that with folder level permissions inside the one library instead, or a separate library only for genuinely restricted material such as HR. Two libraries with a clear rule are fine. Nine are not.</p>
+
+        <h2 id="folders" style="margin:0 0 16px;font-size:clamp(24px,2.8vw,30px);line-height:1.2;letter-spacing:-0.02em;font-weight:600;color:#0D0B22">Shallow folders, and what they are for</h2>
+        <p style="margin:0 0 18px;font-size:17px;line-height:1.8;color:rgba(13,11,34,0.82)">Folders are for permissions and for orientation, not for classification. Two levels is the limit worth defending:</p>
+        <div style="margin:0 0 20px;padding:20px 22px;border:1px solid #E6EAF2;border-radius:16px;background:#F4F6FB;font-size:15px;line-height:2;color:#0D0B22">
+          Contracts<br />
+          <span style="color:#5B6B80">&nbsp;&nbsp;├─</span> Suppliers <span style="color:#94A3B8">/ Bühler AG</span><br />
+          <span style="color:#5B6B80">&nbsp;&nbsp;├─</span> Property <span style="color:#94A3B8">/ Zürich Bahnhofstrasse</span><br />
+          <span style="color:#5B6B80">&nbsp;&nbsp;├─</span> Insurance <span style="color:#94A3B8">/ Helvetia</span><br />
+          <span style="color:#5B6B80">&nbsp;&nbsp;├─</span> IT and licences<br />
+          <span style="color:#5B6B80">&nbsp;&nbsp;└─</span> Customers <span style="color:#94A3B8">/ Kunz AG</span>
+        </div>
+        <p style="margin:0 0 32px;font-size:17px;line-height:1.8;color:rgba(13,11,34,0.82)">Second level is the counterparty, where there is enough volume to justify it. Anything you might otherwise put in a third level, year, status, contract type, belongs in a column, because a column can be filtered and a folder cannot.</p>
+
+        <h2 id="columns" style="margin:0 0 16px;font-size:clamp(24px,2.8vw,30px);line-height:1.2;letter-spacing:-0.02em;font-weight:600;color:#0D0B22">Four columns, and no more</h2>
+        <p style="margin:0 0 20px;font-size:17px;line-height:1.8;color:rgba(13,11,34,0.82)">Every column you add is a field someone has to fill in on every upload, forever. Four is affordable. Nine is the reason the last attempt failed.</p>
+        <div style="margin:0 0 20px;border:1px solid #E6EAF2;border-radius:16px;overflow:hidden">
+          <ul style="list-style:none;margin:0;padding:0;font-size:16px">
+            <li style="padding:14px 18px;background:#F4F6FB"><strong style="font-weight:600;color:#0D0B22">Counterparty</strong> <span style="color:#5B6B80">: single line of text. Not a lookup. Lookups create maintenance.</span></li>
+            <li style="padding:14px 18px;border-top:1px solid #E6EAF2"><strong style="font-weight:600;color:#0D0B22">Contract type</strong> <span style="color:#5B6B80">: choice: supply, lease, insurance, licence, employment, customer, other.</span></li>
+            <li style="padding:14px 18px;border-top:1px solid #E6EAF2;background:#F4F6FB"><strong style="font-weight:600;color:#0D0B22">Term end</strong> <span style="color:#5B6B80">: date. Empty means open ended, which is a valid answer.</span></li>
+            <li style="padding:14px 18px;border-top:1px solid #E6EAF2"><strong style="font-weight:600;color:#0D0B22">Notice by</strong> <span style="color:#5B6B80">: date. Calculated once, at upload. This is the column that pays for the exercise.</span></li>
+          </ul>
+        </div>
+        <p style="margin:0 0 32px;font-size:17px;line-height:1.8;color:rgba(13,11,34,0.82)">Make Counterparty and Contract type required, and leave the two dates optional. A required date field is the fastest way to teach people to type nonsense into it. The <a href="contract-deadlines.dc.html" style="font-weight:600;color:#5F5CEC;text-decoration:none">notice date calculation</a> is worth getting right, because it is the field the whole structure exists to hold.</p>
+
+        <h2 id="naming" style="margin:0 0 16px;font-size:clamp(24px,2.8vw,30px);line-height:1.2;letter-spacing:-0.02em;font-weight:600;color:#0D0B22">A naming rule people can follow</h2>
+        <p style="margin:0 0 20px;font-size:17px;line-height:1.8;color:rgba(13,11,34,0.82)">Even with columns, filenames matter: they travel with the document into email, into a due diligence folder, onto someone's desktop. One pattern, four parts, ISO date first so the list sorts itself.</p>
+        <div style="margin:0 0 20px;padding:20px 22px;border:1px solid #E6EAF2;border-radius:16px;background:#F4F6FB">
+          <p style="margin:0 0 10px;font-size:13px;color:#94A3B8">Pattern</p>
+          <p style="margin:0 0 18px;font-size:clamp(15px,1.4vw,17px);font-weight:600;letter-spacing:-0.01em;color:#0D0B22;word-break:break-word">YYYY-MM-DD<span style="color:#94A3B8">_</span>Counterparty<span style="color:#94A3B8">_</span>Type<span style="color:#94A3B8">_</span>Subject<span style="color:#5B6B80;font-weight:500">.pdf</span></p>
+          <p style="margin:0 0 10px;font-size:13px;color:#94A3B8">In use</p>
+          <p style="margin:0 0 6px;font-size:15px;color:#0D0B22"><span style="border-bottom:3px solid #A5F3FC">2026-01-15</span>_BuehlerAG_Contract_Cleaning.pdf</p>
+          <p style="margin:0 0 6px;font-size:15px;color:#0D0B22">2026-03-02_Helvetia_Policy_Liability.pdf</p>
+          <p style="margin:0;font-size:15px;color:#0D0B22">2026-06-30_KunzAG_Amendment_HalleB.pdf</p>
+        </div>
+        <p style="margin:0 0 18px;font-size:17px;line-height:1.8;color:rgba(13,11,34,0.82)">Three rules make it survive contact with people. Use the document's own date, not the upload date. No spaces, no umlauts, no slashes, they break links and sync clients. And keep the counterparty spelling identical every time, which is worth a short list pinned in the library description.</p>
+        <p style="margin:0 0 32px;font-size:17px;line-height:1.8;color:rgba(13,11,34,0.82)">Amendments are the case everyone forgets. Name them as their own document with their own date, with the same counterparty and subject, so they sort directly beneath the original.</p>
+
+        <h2 id="views" style="margin:0 0 16px;font-size:clamp(24px,2.8vw,30px);line-height:1.2;letter-spacing:-0.02em;font-weight:600;color:#0D0B22">The two views that earn their keep</h2>
+        <p style="margin:0 0 18px;font-size:17px;line-height:1.8;color:rgba(13,11,34,0.82)">Columns are only worth filling in if something reads them. Build two views and put them on the site's home page.</p>
+        <p style="margin:0 0 18px;font-size:17px;line-height:1.8;color:rgba(13,11,34,0.82)"><strong style="font-weight:600;color:#0D0B22">Notice next 120 days.</strong> Filter on Notice by, sorted ascending, grouped by contract type. This is the view someone actually opens in a quarterly review.</p>
+        <p style="margin:0 0 18px;font-size:17px;line-height:1.8;color:rgba(13,11,34,0.82)"><strong style="font-weight:600;color:#0D0B22">Missing information.</strong> Filter for documents where Term end and Notice by are both empty. Not to shame anyone, to make the gap visible while the contract is still fresh enough for someone to remember it.</p>
+        <p style="margin:0 0 32px;font-size:17px;line-height:1.8;color:rgba(13,11,34,0.82)">If you want reminders, a scheduled flow that emails the first view once a month is enough. Per item reminders sound better and produce noise people learn to ignore.</p>
+
+        <h2 id="permissions" style="margin:0 0 16px;font-size:clamp(24px,2.8vw,30px);line-height:1.2;letter-spacing:-0.02em;font-weight:600;color:#0D0B22">Permissions before content</h2>
+        <p style="margin:0 0 18px;font-size:17px;line-height:1.8;color:rgba(13,11,34,0.82)">Decide access before you move a single file, because retrofitting permissions to a populated library is where afternoons become projects. A workable default for an SME: everyone in the company can read the library, a small group can upload and edit columns, and employment contracts live in a separate library restricted to HR and the management board.</p>
+        <p style="margin:0 0 32px;font-size:17px;line-height:1.8;color:rgba(13,11,34,0.82)">Resist per folder exceptions beyond that. Every exception is a question someone has to answer again in two years, usually while a lawyer waits.</p>
+
+        <h2 id="collapse" style="margin:0 0 16px;font-size:clamp(24px,2.8vw,30px);line-height:1.2;letter-spacing:-0.02em;font-weight:600;color:#0D0B22">Why structures collapse by month four</h2>
+        <p style="margin:0 0 18px;font-size:17px;line-height:1.8;color:rgba(13,11,34,0.82)">The structure is rarely wrong. What fails is the manual step. Someone signs a contract, saves it in the mail attachment folder, and means to file it properly on Friday. Four months of Fridays later, the library holds the contracts of the first enthusiastic month and nothing since.</p>
+        <p style="margin:0 0 18px;font-size:17px;line-height:1.8;color:rgba(13,11,34,0.82)">Two things help, and neither is a reminder. First, reduce the work per document: four columns, one naming pattern, no approval workflow. Second, name one person who files everything, and route signed contracts to them rather than asking twelve people to remember a convention.</p>
+        <p style="margin:0 0 32px;font-size:17px;line-height:1.8;color:rgba(13,11,34,0.82)">Also do not migrate the past. Start with contracts still in force, and add the older ones only when someone needs them. A migration project is how this stops being an afternoon.</p>
+
+        <h2 id="afternoon" style="margin:0 0 16px;font-size:clamp(24px,2.8vw,30px);line-height:1.2;letter-spacing:-0.02em;font-weight:600;color:#0D0B22">The afternoon, in order</h2>
+        <ol style="margin:0 0 32px;padding-left:22px;display:flex;flex-direction:column;gap:12px;font-size:17px;line-height:1.75;color:rgba(13,11,34,0.82)">
+          <li>Create one library called Contracts. Set the two permission groups.</li>
+          <li>Add the four columns. Two required, two optional.</li>
+          <li>Create the folders for the categories you actually have, five or six, one level.</li>
+          <li>Build the two views and pin them to the home page.</li>
+          <li>Write the naming pattern into the library description, with three examples.</li>
+          <li>File the contracts currently in force. Nothing older, for now.</li>
+          <li>Put fifteen minutes in the calendar, quarterly, to open the first view.</li>
+        </ol>
+
+        <div style="margin:0 0 clamp(32px,4vw,44px);padding:24px 26px;border:1px solid #E6EAF2;border-radius:16px;background:#F4F6FB">
+          <p style="margin:0 0 10px;font-size:17px;line-height:1.75;color:rgba(13,11,34,0.82)">The manual step in point 6 is the one that decays. DocHive fills it in for you: it reads each new contract, proposes the filename and the folder in this pattern, and moves it through the SharePoint API once you approve.</p>
+          <p style="margin:0;font-size:16px"><a href="../use-cases.dc.html" style="font-weight:600;color:#5F5CEC;text-decoration:none">Read the fair answer on SharePoint and DocHive</a></p>
+        </div>
+
+        <aside style="border-top:1px solid #E6EAF2;padding-top:28px">
+          <h2 style="margin:0 0 18px;font-size:12px;letter-spacing:0.2em;font-weight:600;color:#94A3B8;text-transform:uppercase">Related</h2>
+          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;font-size:17px">
+            <li><a href="contract-deadlines.dc.html" style="font-weight:600;color:#5F5CEC;text-decoration:none">How to track contract renewal dates so none of them slip</a></li>
+            <li><a href="document-retention-switzerland.dc.html" style="font-weight:600;color:#5F5CEC;text-decoration:none">How long Swiss companies must keep documents</a></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </article>
+</main>
+
+<dc-import name="Footer" base="../" hint-size="100%,420px"></dc-import>
+</x-dc>
+</body>
+</html>
