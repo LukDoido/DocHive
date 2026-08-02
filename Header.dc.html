@@ -159,11 +159,11 @@ class Component extends DCLogic {
     const b = this.props.base ?? '';
     const a = this.props.active ?? '';
     const rows = [
-      ['how', 'How it works', b + 'how-it-works.dc.html'],
-      ['use', 'What it handles', b + 'use-cases.dc.html'],
-      ['pricing', 'Pricing', b + 'pricing.dc.html'],
-      ['resources', 'Resources', b + 'resources/index.dc.html'],
-      ['faq', 'FAQ', b + 'faq.dc.html']
+      ['how', 'How it works', b + 'how-it-works.html'],
+      ['use', 'What it handles', b + 'use-cases.html'],
+      ['pricing', 'Pricing', b + 'pricing.html'],
+      ['resources', 'Resources', b + 'resources/index.html'],
+      ['faq', 'FAQ', b + 'faq.html']
     ];
     const map = (r) => ({
       key: r[0], label: r[1], href: r[2],
@@ -172,9 +172,9 @@ class Component extends DCLogic {
     });
     return {
       nav: rows.map(map),
-      navFull: rows.concat([['about', 'About', b + 'about.dc.html']]).map(map),
-      homeHref: b + 'index.dc.html',
-      contactHref: b + 'contact.dc.html',
+      navFull: rows.concat([['about', 'About', b + 'about.html']]).map(map),
+      homeHref: b + 'index.html',
+      contactHref: b + 'contact.html',
       narrow: this.state.ready && this.state.narrow,
       wide: !this.state.ready || !this.state.narrow,
       open: this.state.narrow && this.state.open,

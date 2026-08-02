@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
+<script src="../support.js"></script>
 </head>
 <body>
 <x-dc>
@@ -71,15 +71,15 @@ class Component extends DCLogic {
   renderVals() {
     const b = this.props.base ?? '';
     return {
-      homeHref: b + 'index.dc.html',
-      howHref: b + 'how-it-works.dc.html',
-      useHref: b + 'use-cases.dc.html',
-      pricingHref: b + 'pricing.dc.html',
-      faqHref: b + 'faq.dc.html',
-      aboutHref: b + 'about.dc.html',
-      contactHref: b + 'contact.dc.html',
-      legalHref: b + 'legal.dc.html',
-      resourcesHref: b + 'resources/index.dc.html'
+      homeHref: b + 'index.html',
+      howHref: b + 'how-it-works.html',
+      useHref: b + 'use-cases.html',
+      pricingHref: b + 'pricing.html',
+      faqHref: b + 'faq.html',
+      aboutHref: b + 'about.html',
+      contactHref: b + 'contact.html',
+      legalHref: b + 'legal.html',
+      resourcesHref: b + 'resources/index.html'
     };
   }
 }

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
+<script src="../support.js"></script>
 </head>
 <body>
 <x-dc>
@@ -26,14 +26,7 @@
   <meta name="twitter:image" content="/og-default.png" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Organising contracts in SharePoint without a project","description":"A practical contract structure for SharePoint: one library, four metadata columns, a naming convention, and views that surface expiring agreements.","datePublished":"2026-07-08","dateModified":"2026-07-08","author":{"@type":"Organization","name":"DocHive"},"publisher":{"@type":"Organization","name":"DocHive","logo":{"@type":"ImageObject","url":"https://dochive.ch/og-default.png"}},"mainEntityOfPage":"https://dochive.ch/resources/organise-contracts-sharepoint.html"}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dochive.ch/"},{"@type":"ListItem","position":2,"name":"Resources","item":"https://dochive.ch/resources/"},{"@type":"ListItem","position":3,"name":"Organising contracts in SharePoint","item":"https://dochive.ch/resources/organise-contracts-sharepoint.html"}]}</script>
-  <style>
-    *{box-sizing:border-box}
-    html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-    body{margin:0;background:#F4F6FB;color:#0D0B22;font-family:'Space Grotesk',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
-    a{color:#5F5CEC;text-decoration:none}
-    a:hover{color:#06B6D4}
-    :focus-visible{outline:2px solid #5F5CEC;outline-offset:3px;border-radius:6px}
-  </style>
+  <link rel="stylesheet" href="../global.css" />
 </helmet>
 
 <dc-import name="Header" active="resources" base="../" hint-size="100%,74px"></dc-import>
@@ -42,7 +35,7 @@
   <article>
     <header style="background:#F4F6FB;padding:clamp(36px,4.5vw,64px) clamp(20px,4vw,40px) clamp(32px,4vw,48px)">
       <div style="max-width:720px;margin:0 auto">
-        <nav aria-label="Breadcrumb" style="margin-bottom:22px;font-size:13px;color:#94A3B8"><a href="../index.dc.html" style="color:#5B6B80;text-decoration:none" style-hover="color:#5F5CEC">Home</a> <span aria-hidden="true" style="padding:0 6px">/</span> <a href="index.dc.html" style="color:#5B6B80;text-decoration:none" style-hover="color:#5F5CEC">Resources</a> <span aria-hidden="true" style="padding:0 6px">/</span> <span style="color:#0D0B22">Contracts in SharePoint</span></nav>
+        <nav aria-label="Breadcrumb" style="margin-bottom:22px;font-size:13px;color:#94A3B8"><a href="../index.html" style="color:#5B6B80;text-decoration:none" style-hover="color:#5F5CEC">Home</a> <span aria-hidden="true" style="padding:0 6px">/</span> <a href="index.html" style="color:#5B6B80;text-decoration:none" style-hover="color:#5F5CEC">Resources</a> <span aria-hidden="true" style="padding:0 6px">/</span> <span style="color:#0D0B22">Contracts in SharePoint</span></nav>
         <p style="margin:0 0 18px;font-size:12px;letter-spacing:0.2em;font-weight:600;color:#5B6B80;text-transform:uppercase">Practice</p>
         <h1 style="margin:0;font-size:clamp(30px,3.8vw,44px);line-height:1.08;letter-spacing:-0.03em;font-weight:700;color:#0D0B22;text-wrap:pretty">Organising contracts in SharePoint without a project</h1>
         <p style="margin:22px 0 0;font-size:18px;line-height:1.7;color:rgba(13,11,34,0.72)">A structure a 30-person company can build in an afternoon, and that still works in year three. The difficult part is not SharePoint. It is designing something people will keep doing.</p>
@@ -93,7 +86,7 @@
             <li style="padding:14px 18px;border-top:1px solid #E6EAF2"><strong style="font-weight:600;color:#0D0B22">Notice by</strong> <span style="color:#5B6B80">: date. Calculated once, at upload. This is the column that pays for the exercise.</span></li>
           </ul>
         </div>
-        <p style="margin:0 0 32px;font-size:17px;line-height:1.8;color:rgba(13,11,34,0.82)">Make Counterparty and Contract type required, and leave the two dates optional. A required date field is the fastest way to teach people to type nonsense into it. The <a href="contract-deadlines.dc.html" style="font-weight:600;color:#5F5CEC;text-decoration:none">notice date calculation</a> is worth getting right, because it is the field the whole structure exists to hold.</p>
+        <p style="margin:0 0 32px;font-size:17px;line-height:1.8;color:rgba(13,11,34,0.82)">Make Counterparty and Contract type required, and leave the two dates optional. A required date field is the fastest way to teach people to type nonsense into it. The <a href="contract-deadlines.html" style="font-weight:600;color:#5F5CEC;text-decoration:none">notice date calculation</a> is worth getting right, because it is the field the whole structure exists to hold.</p>
 
         <h2 id="naming" style="margin:0 0 16px;font-size:clamp(24px,2.8vw,30px);line-height:1.2;letter-spacing:-0.02em;font-weight:600;color:#0D0B22">A naming rule people can follow</h2>
         <p style="margin:0 0 20px;font-size:17px;line-height:1.8;color:rgba(13,11,34,0.82)">Even with columns, filenames matter: they travel with the document into email, into a due diligence folder, onto someone's desktop. One pattern, four parts, ISO date first so the list sorts itself.</p>
@@ -136,14 +129,14 @@
 
         <div style="margin:0 0 clamp(32px,4vw,44px);padding:24px 26px;border:1px solid #E6EAF2;border-radius:16px;background:#F4F6FB">
           <p style="margin:0 0 10px;font-size:17px;line-height:1.75;color:rgba(13,11,34,0.82)">The manual step in point 6 is the one that decays. DocHive fills it in for you: it reads each new contract, proposes the filename and the folder in this pattern, and moves it through the SharePoint API once you approve.</p>
-          <p style="margin:0;font-size:16px"><a href="../use-cases.dc.html" style="font-weight:600;color:#5F5CEC;text-decoration:none">Read the fair answer on SharePoint and DocHive</a></p>
+          <p style="margin:0;font-size:16px"><a href="../use-cases.html" style="font-weight:600;color:#5F5CEC;text-decoration:none">Read the fair answer on SharePoint and DocHive</a></p>
         </div>
 
         <aside style="border-top:1px solid #E6EAF2;padding-top:28px">
           <h2 style="margin:0 0 18px;font-size:12px;letter-spacing:0.2em;font-weight:600;color:#94A3B8;text-transform:uppercase">Related</h2>
           <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;font-size:17px">
-            <li><a href="contract-deadlines.dc.html" style="font-weight:600;color:#5F5CEC;text-decoration:none">How to track contract renewal dates so none of them slip</a></li>
-            <li><a href="document-retention-switzerland.dc.html" style="font-weight:600;color:#5F5CEC;text-decoration:none">How long Swiss companies must keep documents</a></li>
+            <li><a href="contract-deadlines.html" style="font-weight:600;color:#5F5CEC;text-decoration:none">How to track contract renewal dates so none of them slip</a></li>
+            <li><a href="document-retention-switzerland.html" style="font-weight:600;color:#5F5CEC;text-decoration:none">How long Swiss companies must keep documents</a></li>
           </ul>
         </aside>
       </div>
