@@ -85,7 +85,7 @@
   </div>
 
   <sc-if value="{{ open }}" hint-placeholder-val="{{ false }}">
-    <div style="position:fixed;inset:0;z-index:80;background:#F4F6FB;display:flex;flex-direction:column;padding:20px clamp(20px,6vw,32px) 32px">
+    <div style="position:fixed;inset:0;z-index:80;background:#F4F6FB;display:flex;flex-direction:column;padding:20px clamp(20px,6vw,32px) 32px;overflow-y:auto">
       <div style="display:flex;align-items:center;justify-content:space-between;min-height:56px">
         <span style="font-size:12px;letter-spacing:0.2em;font-weight:600;color:#5B6B80;text-transform:uppercase">Menu</span>
         <button type="button" onClick="{{ toggle }}" aria-label="Close menu" style="width:44px;height:44px;background:#fff;border:1px solid #E6EAF2;border-radius:12px;font-size:20px;line-height:1;color:#0D0B22;cursor:pointer">×</button>
@@ -96,7 +96,7 @@
         </sc-for>
       </nav>
       <div role="group" aria-label="Language" style="display:flex;align-items:center;gap:10px;margin-top:28px">
-        <a href="{{ homeHref }}" aria-current="true" title="English" style="display:flex;align-items:center;gap:9px;padding:9px 14px;border-radius:11px;border:1.5px solid #9AA2FB;background:#fff;font-size:15px;font-weight:600;color:#0D0B22;text-decoration:none">
+        <a href="{{ homeHref }}" aria-current="true" title="English" style="display:flex;align-items:center;gap:9px;min-height:44px;padding:9px 14px;border-radius:11px;border:1.5px solid #9AA2FB;background:#fff;font-size:15px;font-weight:600;color:#0D0B22;text-decoration:none">
           <svg viewBox="0 0 60 30" width="28" height="20" style="border-radius:3px" aria-hidden="true">
             <clipPath id="ukm"><path d="M0 0h60v30H0z"></path></clipPath>
             <g clip-path="url(#ukm)">
@@ -148,11 +148,18 @@ class Component extends DCLogic {
     document.addEventListener('keydown', this.onKey);
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.open !== this.state.open) {
+      document.body.style.overflow = this.state.open ? 'hidden' : '';
+    }
+  }
+
   componentWillUnmount() {
     if (this.mq) this.mq.removeEventListener('change', this.onMq);
     window.removeEventListener('scroll', this.onScroll);
     document.removeEventListener('pointerdown', this.onDoc);
     document.removeEventListener('keydown', this.onKey);
+    document.body.style.overflow = '';
   }
 
   renderVals() {
