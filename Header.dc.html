@@ -83,40 +83,40 @@
       </button>
     </sc-if>
   </div>
-
-  <sc-if value="{{ open }}" hint-placeholder-val="{{ false }}">
-    <div style="position:fixed;inset:0;z-index:80;background:#F4F6FB;display:flex;flex-direction:column;padding:20px clamp(20px,6vw,32px) 32px;overflow-y:auto">
-      <div style="display:flex;align-items:center;justify-content:space-between;min-height:56px">
-        <span style="font-size:12px;letter-spacing:0.2em;font-weight:600;color:#5B6B80;text-transform:uppercase">Menu</span>
-        <button type="button" onClick="{{ toggle }}" aria-label="Close menu" style="width:44px;height:44px;background:#fff;border:1px solid #E6EAF2;border-radius:12px;font-size:20px;line-height:1;color:#0D0B22;cursor:pointer">×</button>
-      </div>
-      <nav aria-label="Main" style="display:flex;flex-direction:column;gap:2px;margin-top:24px">
-        <sc-for list="{{ navFull }}" as="item" hint-placeholder-count="6">
-          <a href="{{ item.href }}" style="display:flex;align-items:center;min-height:56px;padding:0 4px;border-bottom:1px solid #E6EAF2;font-size:22px;letter-spacing:-0.02em;text-decoration:none;color:#0D0B22;font-weight:{{ item.weight }}">{{ item.label }}</a>
-        </sc-for>
-      </nav>
-      <div role="group" aria-label="Language" style="display:flex;align-items:center;gap:10px;margin-top:28px">
-        <a href="{{ homeHref }}" aria-current="true" title="English" style="display:flex;align-items:center;gap:9px;min-height:44px;padding:9px 14px;border-radius:11px;border:1.5px solid #9AA2FB;background:#fff;font-size:15px;font-weight:600;color:#0D0B22;text-decoration:none">
-          <svg viewBox="0 0 60 30" width="28" height="20" style="border-radius:3px" aria-hidden="true">
-            <clipPath id="ukm"><path d="M0 0h60v30H0z"></path></clipPath>
-            <g clip-path="url(#ukm)">
-              <path fill="#012169" d="M0 0h60v30H0z"></path>
-              <path stroke="#fff" stroke-width="6" d="M0 0l60 30M60 0L0 30"></path>
-              <path stroke="#C8102E" stroke-width="3" d="M0 0l60 30M60 0L0 30"></path>
-              <path stroke="#fff" stroke-width="10" d="M30 0v30M0 15h60"></path>
-              <path stroke="#C8102E" stroke-width="6" d="M30 0v30M0 15h60"></path>
-            </g>
-          </svg>English</a>
-        <span title="Deutsch, in Vorbereitung" aria-disabled="true" style="display:flex;align-items:center;gap:9px;padding:9px 14px;border-radius:11px;border:1px solid #E6EAF2;font-size:15px;color:#94A3B8;opacity:0.65">
-          <svg viewBox="0 0 32 32" width="20" height="20" style="border-radius:3px" aria-hidden="true">
-            <path fill="#D52B1E" d="M0 0h32v32H0z"></path>
-            <path fill="#fff" d="M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z"></path>
-          </svg>Deutsch</span>
-      </div>
-      <a href="{{ contactHref }}" style="display:flex;align-items:center;justify-content:center;margin-top:auto;min-height:56px;border-radius:14px;background:linear-gradient(135deg,#7C7AF2,#2ED3EF);color:#fff;font-size:17px;font-weight:600;text-decoration:none">Book a 20 minute call</a>
-    </div>
-  </sc-if>
 </div>
+
+<sc-if value="{{ open }}" hint-placeholder-val="{{ false }}">
+  <div style="position:fixed;inset:0;z-index:80;background:#F4F6FB;display:flex;flex-direction:column;padding:20px clamp(20px,6vw,32px) 32px;overflow-y:auto">
+    <div style="display:flex;align-items:center;justify-content:space-between;min-height:56px">
+      <span style="font-size:12px;letter-spacing:0.2em;font-weight:600;color:#5B6B80;text-transform:uppercase">Menu</span>
+      <button type="button" onClick="{{ toggle }}" aria-label="Close menu" style="width:44px;height:44px;background:#fff;border:1px solid #E6EAF2;border-radius:12px;font-size:20px;line-height:1;color:#0D0B22;cursor:pointer">×</button>
+    </div>
+    <nav aria-label="Main" style="display:flex;flex-direction:column;gap:2px;margin-top:24px">
+      <sc-for list="{{ navFull }}" as="item" hint-placeholder-count="6">
+        <a href="{{ item.href }}" style="display:flex;align-items:center;min-height:56px;padding:0 4px;border-bottom:1px solid #E6EAF2;font-size:22px;letter-spacing:-0.02em;text-decoration:none;color:#0D0B22;font-weight:{{ item.weight }}">{{ item.label }}</a>
+      </sc-for>
+    </nav>
+    <div role="group" aria-label="Language" style="display:flex;align-items:center;gap:10px;margin-top:28px">
+      <a href="{{ homeHref }}" aria-current="true" title="English" style="display:flex;align-items:center;gap:9px;min-height:44px;padding:9px 14px;border-radius:11px;border:1.5px solid #9AA2FB;background:#fff;font-size:15px;font-weight:600;color:#0D0B22;text-decoration:none">
+        <svg viewBox="0 0 60 30" width="28" height="20" style="border-radius:3px" aria-hidden="true">
+          <clipPath id="ukm"><path d="M0 0h60v30H0z"></path></clipPath>
+          <g clip-path="url(#ukm)">
+            <path fill="#012169" d="M0 0h60v30H0z"></path>
+            <path stroke="#fff" stroke-width="6" d="M0 0l60 30M60 0L0 30"></path>
+            <path stroke="#C8102E" stroke-width="3" d="M0 0l60 30M60 0L0 30"></path>
+            <path stroke="#fff" stroke-width="10" d="M30 0v30M0 15h60"></path>
+            <path stroke="#C8102E" stroke-width="6" d="M30 0v30M0 15h60"></path>
+          </g>
+        </svg>English</a>
+      <span title="Deutsch, in Vorbereitung" aria-disabled="true" style="display:flex;align-items:center;gap:9px;padding:9px 14px;border-radius:11px;border:1px solid #E6EAF2;font-size:15px;color:#94A3B8;opacity:0.65">
+        <svg viewBox="0 0 32 32" width="20" height="20" style="border-radius:3px" aria-hidden="true">
+          <path fill="#D52B1E" d="M0 0h32v32H0z"></path>
+          <path fill="#fff" d="M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z"></path>
+        </svg>Deutsch</span>
+    </div>
+    <a href="{{ contactHref }}" style="display:flex;align-items:center;justify-content:center;margin-top:auto;min-height:56px;border-radius:14px;background:linear-gradient(135deg,#7C7AF2,#2ED3EF);color:#fff;font-size:17px;font-weight:600;text-decoration:none">Book a 20 minute call</a>
+  </div>
+</sc-if>
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1180,&quot;height&quot;:90},&quot;active&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;&quot;,&quot;home&quot;,&quot;how&quot;,&quot;use&quot;,&quot;pricing&quot;,&quot;resources&quot;,&quot;faq&quot;,&quot;about&quot;,&quot;contact&quot;],&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;base&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
 class Component extends DCLogic {
@@ -126,7 +126,10 @@ class Component extends DCLogic {
 
   componentDidMount() {
     this.mq = window.matchMedia('(max-width: 900px)');
-    this.onMq = () => this.setState({ narrow: this.mq.matches, open: false });
+    this.onMq = () => {
+      document.body.style.overflow = '';
+      this.setState({ narrow: this.mq.matches, open: false });
+    };
     this.setState({ narrow: this.mq.matches, ready: true });
     this.mq.addEventListener('change', this.onMq);
     this.onScroll = () => {
@@ -146,12 +149,6 @@ class Component extends DCLogic {
     this.onKey = (e) => { if (e.key === 'Escape') this.setState({ langOpen: false }); };
     document.addEventListener('pointerdown', this.onDoc);
     document.addEventListener('keydown', this.onKey);
-  }
-
-  componentDidUpdate(prevProps, prevState) {
-    if (prevState.open !== this.state.open) {
-      document.body.style.overflow = this.state.open ? 'hidden' : '';
-    }
   }
 
   componentWillUnmount() {
@@ -190,7 +187,11 @@ class Component extends DCLogic {
       langOpen: this.state.langOpen,
       langOpenStr: this.state.langOpen ? 'true' : 'false',
       toggleLang: () => this.setState((s) => ({ langOpen: !s.langOpen })),
-      toggle: () => this.setState((s) => ({ open: !s.open }))
+      toggle: () => this.setState((s) => {
+        const next = !s.open;
+        document.body.style.overflow = next ? 'hidden' : '';
+        return { open: next };
+      })
     };
   }
 }
