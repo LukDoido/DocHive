@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link rel="preconnect" href="https://unpkg.com" crossorigin="" />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet" /></noscript>
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Wie DocHive Dokumente auf Ihrem eigenen Server ablegt | DocHive</title>
+  <meta name="description" content="Die vier Schritte vom neuen Scan zum abgelegten Vertrag: beobachten, lesen, vorschlagen, freigeben. Dazu was vor Ort läuft, was Ihr Netzwerk verlässt, und was nie." />
+  <link rel="canonical" href="https://dochive.ch/de/how-it-works.html" />
+  <link rel="alternate" hreflang="en-CH" href="https://dochive.ch/how-it-works.html" />
+  <link rel="alternate" hreflang="de-CH" href="https://dochive.ch/de/how-it-works.html" />
+  <link rel="alternate" hreflang="x-default" href="https://dochive.ch/how-it-works.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="DocHive" />
+  <meta property="og:url" content="https://dochive.ch/de/how-it-works.html" />
+  <meta property="og:title" content="Dokumentenablage vor Ort, Schritt für Schritt" />
+  <meta property="og:description" content="Beobachten, lesen, vorschlagen, freigeben, und eine Freigabe-Warteschlange, in der sich nichts bewegt, bis eine Person zustimmt. Läuft auf einem Mac mini in Ihrem Büro oder auf Ihrem SharePoint." />
+  <meta property="og:image" content="/og-default.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dokumentenablage vor Ort, Schritt für Schritt" />
+  <meta name="twitter:description" content="Beobachten, lesen, vorschlagen, freigeben, und eine Freigabe-Warteschlange, in der sich nichts bewegt, bis eine Person zustimmt." />
+  <meta name="twitter:image" content="/og-default.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"DocHive","url":"https://dochive.ch/","logo":"https://dochive.ch/og-default.png","address":{"@type":"PostalAddress","streetAddress":"Musterstrasse 00","postalCode":"8000","addressLocality":"Zürich","addressCountry":"CH"},"contactPoint":{"@type":"ContactPoint","contactType":"sales","email":"hello@dochive.ch","telephone":"+41000000000","availableLanguage":["de","en"]},"sameAs":["https://www.linkedin.com/company/dochive","https://github.com/dochive"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://dochive.ch/de/"},{"@type":"ListItem","position":2,"name":"So funktioniert's","item":"https://dochive.ch/de/how-it-works.html"}]}</script>
+  <style>*{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}body{margin:0;background:#F4F6FB;color:#0D0B22;font-family:'Space Grotesk',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}a{color:#5F5CEC;text-decoration:none}a:hover{color:#06B6D4}:focus-visible{outline:2px solid #5F5CEC;outline-offset:3px;border-radius:6px}@media (prefers-reduced-motion: reduce){*{animation-duration:.001ms!important;transition:none!important}}</style>
+  <style>
+    @keyframes dhRise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+  </style>
+</helmet>
+
+<dc-import name="Header" active="how" alt-href="../how-it-works.html" hint-size="100%,74px"></dc-import>
+
+<main id="main" style="display:block">
+
+  <section style="background:#F4F6FB;padding:clamp(40px,5vw,72px) clamp(20px,4vw,40px) clamp(40px,5vw,64px)">
+    <div style="max-width:1180px;margin:0 auto">
+      <nav aria-label="Brotkrümelnavigation" style="margin-bottom:24px;font-size:13px;color:#5F6E85"><a href="index.html" style="color:#5B6B80;text-decoration:none" style-hover="color:#5F5CEC">Startseite</a> <span aria-hidden="true" style="padding:0 6px">/</span> <span style="color:#0D0B22">So funktioniert's</span></nav>
+      <p style="margin:0 0 18px;font-size:12px;letter-spacing:0.2em;font-weight:600;color:#5B6B80;text-transform:uppercase">So funktioniert's</p>
+      <h1 style="margin:0;max-width:24ch;font-size:clamp(34px,4.6vw,54px);line-height:1.05;letter-spacing:-0.03em;font-weight:700;color:#0D0B22;text-wrap:pretty">Dokumentenablage vor Ort, vom neuen Scan zum abgelegten Vertrag</h1>
+      <p style="margin:24px 0 0;max-width:60ch;font-size:clamp(17px,1.3vw,19px);line-height:1.7;color:rgba(13,11,34,0.72)">Vier Schritte, eine Warteschlange, die Sie kontrollieren, und eine klare Liste dessen, was Ihr Netzwerk verlässt. Wenn Sie nach dem Haken suchen, sind Sie hier richtig.</p>
+    </div>
+  </section>
+
+  <section style="background:#fff;border-top:1px solid #E6EAF2;padding:clamp(56px,7vw,96px) clamp(20px,4vw,40px)">
+    <div style="max-width:1180px;margin:0 auto" data-reveal="">
+      <p style="margin:0 0 16px;font-size:12px;letter-spacing:0.2em;font-weight:600;color:#5B6B80;text-transform:uppercase">Die Pipeline</p>
+      <h2 style="margin:0 0 clamp(32px,4vw,52px);max-width:24ch;font-size:clamp(28px,3.6vw,42px);line-height:1.08;letter-spacing:-0.03em;font-weight:600;color:#0D0B22">Beobachten, lesen, vorschlagen, freigeben.</h2>
+      <ol style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:clamp(24px,3vw,32px)">
+        <li style="background:#F4F6FB;border:1px solid #E6EAF2;border-radius:18px;padding:clamp(22px,2.6vw,28px)">
+          <p aria-hidden="true" style="margin:0 0 16px;font-size:13px;font-weight:600;letter-spacing:0.1em;color:#5F5CEC">01</p>
+          <h3 style="margin:0 0 12px;font-size:20px;letter-spacing:-0.02em;font-weight:600;color:#0D0B22">Beobachten</h3>
+          <p style="margin:0 0 14px;font-size:16px;line-height:1.7;color:rgba(13,11,34,0.72)">Sie benennen die Orte, an denen Dokumente eingehen: ein Scan-Ordner, ein gemeinsames Laufwerk, ein Postfach wie <span style="color:#0D0B22">rechnungen@</span> oder <span style="color:#0D0B22">vertraege@</span>. DocHive beobachtet sie und übernimmt alles Neue.</p>
+          <p style="margin:0;font-size:14px;line-height:1.6;color:#5F6E85">Konkret: ein Ordner-Listener und eine IMAP-Verbindung. Nichts wird aus der Quelle herauskopiert.</p>
+        </li>
+        <li style="background:#F4F6FB;border:1px solid #E6EAF2;border-radius:18px;padding:clamp(22px,2.6vw,28px)">
+          <p aria-hidden="true" style="margin:0 0 16px;font-size:13px;font-weight:600;letter-spacing:0.1em;color:#5F5CEC">02</p>
+          <h3 style="margin:0 0 12px;font-size:20px;letter-spacing:-0.02em;font-weight:600;color:#0D0B22">Lesen</h3>
+          <p style="margin:0 0 14px;font-size:16px;line-height:1.7;color:rgba(13,11,34,0.72)">Gedruckt oder gescannt, wird das Dokument zu Text. Dann wird gelesen, um was es sich handelt: Vertrag, Police, Rechnung, Offerte, und um die Details: Parteien, Daten, Beträge, Kündigungsfristen.</p>
+          <p style="margin:0;font-size:14px;line-height:1.6;color:#5F6E85">Texterkennung und das Modell, das liest, laufen beide vor Ort, in Ihrem Büro.</p>
+        </li>
+        <li style="background:#F4F6FB;border:1px solid #E6EAF2;border-radius:18px;padding:clamp(22px,2.6vw,28px)">
+          <p aria-hidden="true" style="margin:0 0 16px;font-size:13px;font-weight:600;letter-spacing:0.1em;color:#5F5CEC">03</p>
+          <h3 style="margin:0 0 12px;font-size:20px;letter-spacing:-0.02em;font-weight:600;color:#0D0B22">Vorschlagen</h3>
+          <p style="margin:0 0 14px;font-size:16px;line-height:1.7;color:rgba(13,11,34,0.72)">Ihr Namensmuster wird angewendet und ein Zielort aus bereits bestehenden Ordnern ausgewählt. Das Ergebnis ist ein Vorschlag, keine Aktion.</p>
+          <p style="margin:0;font-size:14px;line-height:1.6;color:#5F6E85">Die Regeln werden gemeinsam mit Ihnen vor Ort eingerichtet und können jederzeit geändert werden.</p>
+        </li>
+        <li style="background:#F4F6FB;border:1px solid #E6EAF2;border-radius:18px;padding:clamp(22px,2.6vw,28px)">
+          <p aria-hidden="true" style="margin:0 0 16px;font-size:13px;font-weight:600;letter-spacing:0.1em;color:#5F5CEC">04</p>
+          <h3 style="margin:0 0 12px;font-size:20px;letter-spacing:-0.02em;font-weight:600;color:#0D0B22">Sie geben frei</h3>
+          <p style="margin:0 0 14px;font-size:16px;line-height:1.7;color:rgba(13,11,34,0.72)">Geben Sie frei, wird die Datei umbenannt und verschoben. Bearbeiten Sie, wird Ihre Version verwendet. Lehnen Sie ab, passiert nichts.</p>
+          <p style="margin:0;font-size:14px;line-height:1.6;color:#5F6E85">Bis dahin bleibt das Dokument unverändert dort, wo es eingegangen ist.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="review-queue" style="background:#F4F6FB;padding:clamp(56px,7vw,96px) clamp(20px,4vw,40px)">
+    <div style="max-width:1180px;margin:0 auto" data-reveal="">
+      <div style="max-width:60ch;margin-bottom:clamp(32px,4vw,48px)">
+        <p style="margin:0 0 16px;font-size:12px;letter-spacing:0.2em;font-weight:600;color:#5B6B80;text-transform:uppercase">Die Freigabe-Warteschlange</p>
+        <h2 style="margin:0 0 20px;font-size:clamp(28px,3.6vw,42px);line-height:1.08;letter-spacing:-0.03em;font-weight:600;color:#0D0B22">Nichts bewegt sich, bevor Sie es freigeben.</h2>
+        <p style="margin:0;font-size:17px;line-height:1.75;color:rgba(13,11,34,0.72)">Das ganze Produkt auf einem Bildschirm: eine Karte pro Dokument, mit dem, was daraus gelesen wurde, und wohin es gehen würde.</p>
+      </div>
+
+      <div style="background:#fff;border:1px solid #E6EAF2;border-radius:18px;padding:clamp(20px,2.6vw,32px)">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding-bottom:20px;border-bottom:1px solid #E6EAF2">
+          <p style="margin:0;font-size:12px;letter-spacing:0.2em;font-weight:600;color:#5F6E85;text-transform:uppercase">Wartet auf Prüfung <span style="color:#5F5CEC">3</span></p>
+          <p style="margin:0;font-size:13px;color:#5F6E85">Erfasst um 09:12 aus Scans / Posteingang</p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(24px,3vw,40px);padding-top:24px">
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <div role="img" aria-label="Vorschau der ersten Seite des gescannten Wartungsvertrags" style="height:220px;border:1px solid #E6EAF2;border-radius:14px;background-color:#F4F6FB;background-image:repeating-linear-gradient(0deg,#E6EAF2 0 1px,transparent 1px 13px);background-position:24px 34px;background-size:calc(100% - 60px) 150px;background-repeat:no-repeat"></div>
+            <p style="margin:0;font-size:13px;line-height:1.6;color:#5F6E85">Seite 1 von 6 · gescannt mit 300 dpi · Text erkannt</p>
+          </div>
+
+          <div style="grid-column:span 2;min-width:0">
+            <p style="margin:0 0 6px;font-size:13px;color:#5F6E85">Vorgeschlagener Dateiname</p>
+            <p style="margin:0 0 18px;font-size:clamp(16px,1.5vw,20px);line-height:1.4;letter-spacing:-0.01em;font-weight:600;color:#0D0B22;word-break:break-word"><span style="border-bottom:3px solid #A5F3FC">2026-07-20</span><span style="color:#5F6E85">_</span>AcmeCorp<span style="color:#5F6E85">_</span>Vertrag<span style="color:#5F6E85">_</span>Wartung<span style="color:#5B6B80;font-weight:500">.pdf</span></p>
+
+            <p style="margin:0 0 6px;font-size:13px;color:#5F6E85">Vorgeschlagener Ordner <span style="color:#5B6B80">(bestehend)</span></p>
+            <p style="margin:0 0 22px;font-size:16px;font-weight:500;color:#0D0B22">Verträge <span aria-hidden="true" style="color:#5F6E85">/</span> Wartung <span aria-hidden="true" style="color:#5F6E85">/</span> Acme Corp AG</p>
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:#E6EAF2;border:1px solid #E6EAF2;border-radius:14px;overflow:hidden;margin-bottom:22px">
+              <div style="background:#fff;padding:14px 16px"><p style="margin:0 0 4px;font-size:12px;color:#5F6E85">Vertragspartner</p><p style="margin:0;font-size:15px;font-weight:500;color:#0D0B22">Acme Corp AG</p></div>
+              <div style="background:#fff;padding:14px 16px"><p style="margin:0 0 4px;font-size:12px;color:#5F6E85">Startdatum</p><p style="margin:0;font-size:15px;font-weight:500;color:#0D0B22">01.08.2026</p></div>
+              <div style="background:#fff;padding:14px 16px"><p style="margin:0 0 4px;font-size:12px;color:#5F6E85">Kündigungsfrist</p><p style="margin:0;font-size:15px;font-weight:500;color:#0D0B22">3 Monate, zum Laufzeitende</p></div>
+              <div style="background:#fff;padding:14px 16px"><p style="margin:0 0 4px;font-size:12px;color:#5F6E85">Jahreswert</p><p style="margin:0;font-size:15px;font-weight:500;color:#0D0B22">CHF 18'400</p></div>
+            </div>
+
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:22px">
+              <span style="display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid #E6EAF2;border-radius:99px;font-size:13px;font-weight:600;color:#0D0B22">
+                <span aria-hidden="true" style="display:flex;gap:3px"><span style="display:block;width:5px;height:12px;border-radius:2px;background:#5F5CEC"></span><span style="display:block;width:5px;height:12px;border-radius:2px;background:#5F5CEC"></span><span style="display:block;width:5px;height:12px;border-radius:2px;background:#5F5CEC"></span><span style="display:block;width:5px;height:12px;border-radius:2px;background:#E6EAF2"></span></span>
+                Hohe Zuverlässigkeit
+              </span>
+              <span style="font-size:13px;line-height:1.6;color:#5B6B80">Kündigungsfrist aus Klausel 8.2 gelesen, das eine Feld, das einen Blick wert ist.</span>
+            </div>
+
+            <div style="display:flex;flex-wrap:wrap;gap:12px">
+              <button type="button" style="min-height:48px;padding:0 22px;border:0;border-radius:12px;background:linear-gradient(135deg,#7C7AF2,#2ED3EF);color:#fff;font-family:'Space Grotesk',system-ui,sans-serif;font-size:15px;font-weight:600;cursor:pointer">Freigeben &amp; ablegen</button>
+              <button type="button" style="min-height:48px;padding:0 22px;border:1px solid #E6EAF2;border-radius:12px;background:#fff;color:#0D0B22;font-family:'Space Grotesk',system-ui,sans-serif;font-size:15px;font-weight:600;cursor:pointer" style-hover="border-color:#5F5CEC;color:#5F5CEC">Name oder Ordner bearbeiten</button>
+              <button type="button" style="min-height:48px;padding:0 18px;border:1px solid #E6EAF2;border-radius:12px;background:#fff;color:#5B6B80;font-family:'Space Grotesk',system-ui,sans-serif;font-size:15px;font-weight:500;cursor:pointer" style-hover="border-color:#5F6E85;color:#0D0B22">Ablehnen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(24px,3vw,32px);margin-top:clamp(24px,3vw,32px)">
+        <div style="background:#fff;border:1px solid #E6EAF2;border-radius:18px;padding:clamp(22px,2.6vw,28px)">
+          <h3 style="margin:0 0 12px;font-size:19px;letter-spacing:-0.02em;font-weight:600;color:#0D0B22">Ein Prüfprotokoll, kein Rätsel</h3>
+          <p style="margin:0;font-size:16px;line-height:1.7;color:rgba(13,11,34,0.72)">Jeder Vorschlag, jede Bearbeitung, Freigabe und Ablehnung wird mit Nutzer, Zeitstempel, altem und neuem Namen aufgezeichnet. Exportierbar, und einsehbar für alle, denen Sie das Recht dazu geben.</p>
+        </div>
+        <div style="background:#fff;border:1px solid #E6EAF2;border-radius:18px;padding:clamp(22px,2.6vw,28px)">
+          <h3 style="margin:0 0 12px;font-size:19px;letter-spacing:-0.02em;font-weight:600;color:#0D0B22">Rückgängig mit einem Klick</h3>
+          <p style="margin:0;font-size:16px;line-height:1.7;color:rgba(13,11,34,0.72)">Ein abgelegtes Dokument kann exakt dorthin zurückgesetzt werden, wo es war, unter seinem ursprünglichen Namen. Eine Freigabe ist eine Entscheidung, die Sie rückgängig machen können, das ist der Sinn der Freigabe überhaupt.</p>
+        </div>
+        <div style="background:#fff;border:1px solid #E6EAF2;border-radius:18px;padding:clamp(22px,2.6vw,28px)">
+          <h3 style="margin:0 0 12px;font-size:19px;letter-spacing:-0.02em;font-weight:600;color:#0D0B22">Nur Ihre Ordner</h3>
+          <p style="margin:0;font-size:16px;line-height:1.7;color:rgba(13,11,34,0.72)">DocHive legt in die Struktur ab, die Sie bereits haben. Es erstellt keine Ordner, strukturiert Ihr Laufwerk nicht um und führt kein Parallelarchiv mit eigener Logik ein.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#fff;border-top:1px solid #E6EAF2;padding:clamp(56px,7vw,96px) clamp(20px,4vw,40px)">
+    <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(32px,5vw,64px);align-items:start" data-reveal="">
+      <div>
+        <p style="margin:0 0 16px;font-size:12px;letter-spacing:0.2em;font-weight:600;color:#5B6B80;text-transform:uppercase">Fristen</p>
+        <h2 style="margin:0 0 20px;font-size:clamp(28px,3.6vw,42px);line-height:1.08;letter-spacing:-0.03em;font-weight:600;color:#0D0B22">Die Daten stammen aus dem Text.</h2>
+        <p style="margin:0 0 18px;font-size:17px;line-height:1.75;color:rgba(13,11,34,0.72)">Laufzeit, Verlängerungsdatum und Kündigungsfrist werden beim Ablegen des Dokuments gelesen und von Ihnen in der Prüfkarte bestätigt. Die Erinnerung wird dann von der Frist zurückgerechnet, anhand der Kündigungsfrist, nicht einer festen Anzahl Tage.</p>
+        <p style="margin:0;font-size:16px;line-height:1.75;color:#5B6B80">Erinnerungen gehen per E-Mail an die von Ihnen genannten Personen, mit einem Link zum Dokument und der Klausel, aus der das Datum stammt. Ein mehrdeutiges Datum wird markiert, nicht geraten.</p>
+      </div>
+      <div style="background:#F4F6FB;border:1px solid #E6EAF2;border-radius:18px;padding:clamp(22px,2.6vw,28px)">
+        <p style="margin:0 0 20px;font-size:12px;letter-spacing:0.2em;font-weight:600;color:#5F6E85;text-transform:uppercase">Nächste Termine</p>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:0">
+          <li style="display:grid;grid-template-columns:96px 1fr;gap:14px;padding:16px 0;border-top:1px solid #E6EAF2"><span style="font-size:14px;font-weight:600;color:#5F5CEC">30.09.2026</span><span><span style="display:block;font-size:15px;font-weight:500;color:#0D0B22">Reinigungsvertrag, Bühler AG</span><span style="display:block;margin-top:3px;font-size:13px;color:#5B6B80">Kündigung muss bis 30.09 erfolgen für den 31.12, 2 Monate</span></span></li>
+          <li style="display:grid;grid-template-columns:96px 1fr;gap:14px;padding:16px 0;border-top:1px solid #E6EAF2"><span style="font-size:14px;font-weight:600;color:#0D0B22">31.10.2026</span><span><span style="display:block;font-size:15px;font-weight:500;color:#0D0B22">Haftpflichtpolice, Helvetia</span><span style="display:block;margin-top:3px;font-size:13px;color:#5B6B80">Verlängert sich automatisch um ein Jahr</span></span></li>
+          <li style="display:grid;grid-template-columns:96px 1fr;gap:14px;padding:16px 0;border-top:1px solid #E6EAF2"><span style="font-size:14px;font-weight:600;color:#0D0B22">31.12.2026</span><span><span style="display:block;font-size:15px;font-weight:500;color:#0D0B22">Softwarelizenz, Nexo GmbH</span><span style="display:block;margin-top:3px;font-size:13px;color:#5B6B80">Laufzeit endet, keine automatische Verlängerung</span></span></li>
+          <li style="display:grid;grid-template-columns:96px 1fr;gap:14px;padding:16px 0;border-top:1px solid #E6EAF2;border-bottom:1px solid #E6EAF2"><span style="font-size:14px;font-weight:600;color:#5F6E85">Unklar</span><span><span style="display:block;font-size:15px;font-weight:500;color:#0D0B22">Lagermietvertrag, Meier Immobilien</span><span style="display:block;margin-top:3px;font-size:13px;color:#5B6B80">Zwei widersprüchliche Enddaten im Dokument, für eine Person markiert</span></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#F4F6FB;padding:clamp(56px,7vw,96px) clamp(20px,4vw,40px)">
+    <div style="max-width:940px;margin:0 auto" data-reveal="">
+      <p style="margin:0 0 16px;font-size:12px;letter-spacing:0.2em;font-weight:600;color:#5B6B80;text-transform:uppercase">Suche</p>
+      <h2 style="margin:0 0 24px;font-size:clamp(28px,3.6vw,42px);line-height:1.08;letter-spacing:-0.03em;font-weight:600;color:#0D0B22">Fragen Sie, wie Sie einen Kollegen fragen würden.</h2>
+      <div style="background:#fff;border:1px solid #E6EAF2;border-radius:18px;padding:clamp(22px,2.6vw,30px)">
+        <p style="margin:0 0 8px;font-size:13px;color:#5F6E85">Sie tippen</p>
+        <p style="margin:0 0 26px;padding:16px 18px;border:1px solid #E6EAF2;border-radius:13px;background:#F4F6FB;font-size:clamp(16px,1.4vw,19px);font-weight:500;color:#0D0B22">was haben wir mit Meier zum Dach vereinbart</p>
+        <p style="margin:0 0 12px;font-size:13px;color:#5F6E85">Sie erhalten</p>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:0">
+          <li style="padding:16px 0;border-top:1px solid #E6EAF2"><p style="margin:0 0 4px;font-size:15px;font-weight:600;color:#0D0B22">2024-03-11_MeierBau_Vertrag_Dachsanierung.pdf</p><p style="margin:0;font-size:14px;line-height:1.6;color:#5B6B80">Klausel 4: fünf Jahre Garantie auf die Dichtungsschicht, ab Übergabe.</p></li>
+          <li style="padding:16px 0;border-top:1px solid #E6EAF2"><p style="margin:0 0 4px;font-size:15px;font-weight:600;color:#0D0B22">2024-02-02_MeierBau_Offerte_Dachsanierung_v3.pdf</p><p style="margin:0;font-size:14px;line-height:1.6;color:#5B6B80">Die Version, die unterschrieben wurde, v1 und v2 sind darunter aufgeführt.</p></li>
+          <li style="padding:16px 0;border-top:1px solid #E6EAF2;border-bottom:1px solid #E6EAF2"><p style="margin:0 0 4px;font-size:15px;font-weight:600;color:#0D0B22">2024-01-24_Protokoll_Baukommission.pdf</p><p style="margin:0;font-size:14px;line-height:1.6;color:#5B6B80">Wo der Umfang entschieden wurde, mit wer im Raum war.</p></li>
+        </ul>
+        <p style="margin:22px 0 0;font-size:14px;line-height:1.65;color:#5F6E85">Ergebnisse respektieren die Zugriffsrechte, die bereits auf den Ordnern gesetzt sind. Können Sie ein Dokument in Ihrem Laufwerk nicht öffnen, erscheint es hier nicht.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#fff;border-top:1px solid #E6EAF2;padding:clamp(56px,7vw,96px) clamp(20px,4vw,40px)">
+    <div style="max-width:940px;margin:0 auto" data-reveal="">
+      <p style="margin:0 0 16px;font-size:12px;letter-spacing:0.2em;font-weight:600;color:#5B6B80;text-transform:uppercase">Wie es besser wird</p>
+      <h2 style="margin:0 0 24px;font-size:clamp(28px,3.6vw,42px);line-height:1.08;letter-spacing:-0.03em;font-weight:600;color:#0D0B22">Es verbessert sich nicht von selbst.</h2>
+      <p style="margin:0 0 30px;max-width:62ch;font-size:17px;line-height:1.75;color:rgba(13,11,34,0.72)">Nichts lernt still im Hintergrund. Die Genauigkeit verbessert sich auf drei Arten, alle für Sie sichtbar.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:#E6EAF2;border:1px solid #E6EAF2;border-radius:18px;overflow:hidden">
+        <div style="background:#F4F6FB;padding:24px"><h3 style="margin:0 0 8px;font-size:17px;font-weight:600;color:#0D0B22">Ihre Korrekturen</h3><p style="margin:0;font-size:15px;line-height:1.65;color:#5B6B80">Wenn Sie einen Namen oder Ordner ändern, wird dieses Beispiel lokal gespeichert und für das nächste Dokument dieser Art verwendet.</p></div>
+        <div style="background:#F4F6FB;padding:24px"><h3 style="margin:0 0 8px;font-size:17px;font-weight:600;color:#0D0B22">Regeln, die wir feinjustieren</h3><p style="margin:0;font-size:15px;line-height:1.65;color:#5B6B80">Bei der jährlichen Überprüfung schauen wir, was Sie immer wieder korrigiert haben, und passen die Regeln an, damit Sie das nicht mehr müssen.</p></div>
+        <div style="background:#F4F6FB;padding:24px"><h3 style="margin:0 0 8px;font-size:17px;font-weight:600;color:#0D0B22">Neue Modellversionen</h3><p style="margin:0;font-size:15px;line-height:1.65;color:#5B6B80">Bessere Modelle kommen mit Updates, zuerst von uns getestet. Inbegriffen, nie separat verrechnet.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="where-it-runs" style="background:#F4F6FB;padding:clamp(56px,7vw,96px) clamp(20px,4vw,40px)">
+    <div style="max-width:1180px;margin:0 auto" data-reveal="">
+      <div style="max-width:56ch;margin-bottom:clamp(28px,3vw,44px)">
+        <p style="margin:0 0 16px;font-size:12px;letter-spacing:0.2em;font-weight:600;color:#5B6B80;text-transform:uppercase">Wo es läuft</p>
+        <h2 style="margin:0 0 20px;font-size:clamp(28px,3.6vw,42px);line-height:1.08;letter-spacing:-0.03em;font-weight:600;color:#0D0B22">Zwei Orte, ein Produkt.</h2>
+        <p style="margin:0;font-size:17px;line-height:1.75;color:rgba(13,11,34,0.72)">Dieselbe Software, dieselben Regeln, dieselbe Freigabe-Warteschlange. Nur der Ort Ihrer Dateien unterscheidet sich.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(24px,3vw,32px)">
+        <div style="background:#fff;border:1px solid #E6EAF2;border-radius:18px;padding:clamp(24px,3vw,32px)">
+          <h3 style="margin:0 0 14px;font-size:21px;letter-spacing:-0.02em;font-weight:600;color:#0D0B22">Auf Ihrem eigenen Server</h3>
+          <p style="margin:0 0 16px;font-size:16px;line-height:1.7;color:rgba(13,11,34,0.72)">Alles läuft auf einem Mac mini in Ihrem Netzwerk: Lesen, Extraktion, Suchindex, Freigabe-Warteschlange. Dateien verlassen das Gebäude nie.</p>
+          <p style="margin:0;font-size:15px;line-height:1.7;color:#5B6B80">Er ist lautlos, etwa so gross wie ein kleines Buch, und braucht weniger Strom als eine Schreibtischlampe. Er steht in einem Schrank. Wir bringen ihn, installieren ihn, und er gehört Ihnen.</p>
+        </div>
+        <div style="background:#fff;border:1px solid #E6EAF2;border-radius:18px;padding:clamp(24px,3vw,32px)">
+          <h3 style="margin:0 0 14px;font-size:21px;letter-spacing:-0.02em;font-weight:600;color:#0D0B22">Auf Ihrem SharePoint oder Google Drive</h3>
+          <p style="margin:0 0 16px;font-size:16px;line-height:1.7;color:rgba(13,11,34,0.72)">Ihre Dokumente bleiben in der Cloud, die Sie bereits bezahlen. DocHive verbindet sich über die offizielle API und tut drei Dinge: lesen, umbenennen, verschieben. Nichts wird in ein zweites System kopiert.</p>
+          <p style="margin:0;font-size:15px;line-height:1.7;color:#5B6B80">Bestehende Berechtigungen gelten unverändert. Ist ein Ordner heute auf HR beschränkt, bleibt er auf HR beschränkt.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:linear-gradient(135deg,#5F5CEC 0%,#3667C8 55%,#12688F 100%);padding:clamp(56px,7vw,96px) clamp(20px,4vw,40px)">
+    <div style="max-width:940px;margin:0 auto" data-reveal="">
+      <p style="margin:0 0 16px;font-size:12px;letter-spacing:0.2em;font-weight:600;color:#FFFFFF;text-transform:uppercase">Was das Gebäude verlässt</p>
+      <h2 style="margin:0 0 26px;font-size:clamp(28px,3.6vw,42px);line-height:1.08;letter-spacing:-0.03em;font-weight:600;color:#fff">Die ehrliche Liste.</h2>
+      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:0">
+        <li style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px 32px;padding:22px 0;border-top:1px solid rgba(255,255,255,0.14)"><p style="margin:0;font-size:18px;font-weight:600;color:#fff">Ihre Dokumente</p><p style="margin:0;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.72)">Nie. Sie werden dort gelesen, wo sie liegen, und bleiben dort, wo sie liegen.</p></li>
+        <li style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px 32px;padding:22px 0;border-top:1px solid rgba(255,255,255,0.14)"><p style="margin:0;font-size:18px;font-weight:600;color:#fff">Eine Lizenzprüfung</p><p style="margin:0;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.72)">Einmal täglich. Sie enthält einen Lizenzschlüssel und die Softwareversion. Keine Dateinamen, kein Inhalt, keine Metadaten zu Ihren Dokumenten.</p></li>
+        <li style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px 32px;padding:22px 0;border-top:1px solid rgba(255,255,255,0.14);border-bottom:1px solid rgba(255,255,255,0.14)"><p style="margin:0;font-size:18px;font-weight:600;color:#fff">Cloud-Verarbeitung</p><p style="margin:0;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.72)">Nur wenn Sie es aktivieren, und nur für die schwierigen Dokumente, die Sie ihr senden: schlechte Handschrift, schlechte Scans. Standardmässig aus, und kann für immer aus bleiben.</p></li>
+      </ul>
+      <p style="margin:30px 0 0;max-width:56ch;font-size:17px;line-height:1.7;color:#D9FAFF">Ihre Dokumente werden nie zum Trainieren irgendeines Modells verwendet, weder unseres noch das von irgendjemand anderem.</p>
+      <p style="margin:22px 0 0;font-size:16px"><a href="faq.html" style="font-weight:600;color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.4);padding-bottom:2px" style-hover="color:#A5F3FC">Die Datenfragen, einzeln beantwortet in der FAQ</a></p>
+    </div>
+  </section>
+
+  <section style="background:#fff;border-top:1px solid #E6EAF2;padding:clamp(48px,6vw,80px) clamp(20px,4vw,40px)">
+    <div style="max-width:940px;margin:0 auto;display:flex;flex-wrap:wrap;gap:clamp(20px,3vw,40px)" data-reveal="">
+      <p style="margin:0;flex:1 1 240px;font-size:17px;line-height:1.75;color:rgba(13,11,34,0.72)">Jetzt, da Sie wissen, wie es funktioniert, sind die nützlichen nächsten Fragen, welche Ihrer Dokumente es verarbeitet und was es kostet.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:start">
+        <a href="use-cases.html" style="display:inline-flex;align-items:center;min-height:52px;padding:0 22px;border:1px solid #E6EAF2;border-radius:13px;background:#F4F6FB;font-size:16px;font-weight:600;color:#0D0B22;text-decoration:none" style-hover="border-color:#5F5CEC;color:#5F5CEC">Was es kann</a>
+        <a href="pricing.html" style="display:inline-flex;align-items:center;min-height:52px;padding:0 22px;border:1px solid #E6EAF2;border-radius:13px;background:#F4F6FB;font-size:16px;font-weight:600;color:#0D0B22;text-decoration:none" style-hover="border-color:#5F5CEC;color:#5F5CEC">Preise im Detail</a>
+      </div>
+    </div>
+  </section>
+
+  <dc-import name="CTABand" line="Bringen Sie Ihren kniffligsten Ordner zum Gespräch mit. Zwanzig Minuten reichen meist, um zu sehen, ob die Regeln greifen würden." hint-size="100%,260px"></dc-import>
+</main>
+
+<dc-import name="Footer" hint-size="100%,420px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const els = Array.prototype.slice.call(document.querySelectorAll('[data-reveal]'));
+    els.forEach((el) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(16px)';
+      el.style.transition = 'opacity .65s ease, transform .65s ease';
+    });
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'none';
+        io.unobserve(e.target);
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -6% 0px' });
+    els.forEach((el) => io.observe(el));
+  }
+}
+</script>
+</body>
+</html>
